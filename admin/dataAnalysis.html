@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin - Control Panel</title>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dataAnalysis.css">
+    <link rel="stylesheet" href="./customscrollbar.css">
+</head>
+<body>
+    <div class="loadingDiv">
+        <img src="./img/settings.png"/>
+    </div>
+    <div class="sidebar">
+        <h3 class="databaseHead">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><path d="M32,7.842,9,26.242V58a3,3,0,0,0,3,3H25V45a1,1,0,0,1,1-1H38a1,1,0,0,1,1,1V61H52a3,3,0,0,0,3-3V26.242ZM37,34a1,1,0,0,1-1,1H28a1,1,0,0,1-1-1V26a1,1,0,0,1,1-1h8a1,1,0,0,1,1,1Z" fill="#f4f4f4"></path><path data-color="color-2" d="M62.625,27.219l-30-24a1,1,0,0,0-1.25,0L17,14.719V8a1,1,0,0,0-1-1H12a1,1,0,0,0-1,1V19.519l-9.625,7.7a1,1,0,0,0,1.25,1.562L32,5.281l29.375,23.5a1,1,0,1,0,1.25-1.562Z" fill="#f4f4f4"></path></g></svg>
+            Admin
+        </h3>
+        <br/>
+        <a href="/admin">
+        <div class="navBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16"><g transform="translate(0, 0)"><path fill="#f4f4f4" d="M6,0H1C0.4,0,0,0.4,0,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V1C7,0.4,6.6,0,6,0z"></path> <path fill="#f4f4f4" d="M15,0h-5C9.4,0,9,0.4,9,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V1C16,0.4,15.6,0,15,0z"></path> <path fill="#f4f4f4" d="M6,9H1c-0.6,0-1,0.4-1,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1v-5C7,9.4,6.6,9,6,9z"></path> <path fill="#f4f4f4" d="M15,9h-5c-0.6,0-1,0.4-1,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1v-5C16,9.4,15.6,9,15,9z"></path></g></svg>
+            Dashboard
+        </div>
+        </a>
+        <a href="/admin/viewdatabase.html">
+        <div class="navBtn">
+            <img src="img/databaseSettings.png" height="20px"/>
+            Database
+        </div>
+        </a>
+        <a href="/admin/settings.html">
+        <div class="navBtn">
+            <img src="img/settings.png" height="20px"/>
+            Settings
+        </div>
+        </a>
+        <a href="/admin/dataAnalysis.html">
+        <div class="navBtn navBtnSelected">
+            <img src="img/settings.png" height="20px"/>
+            Analyse Data
+        </div>
+        </a>
+        <a href="/admin/sendMail.html">
+        <div class="navBtn">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><path d="M56,7H8a6.006,6.006,0,0,0-6,6V51a6.006,6.006,0,0,0,6,6H56a6.006,6.006,0,0,0,6-6V13A6.006,6.006,0,0,0,56,7Zm.656,8.755-23,20a1,1,0,0,1-1.312,0l-23-20a1,1,0,1,1,1.312-1.51L33,33.675l22.344-19.43a1,1,0,0,1,1.312,1.51Z" fill="#f9f9f9"></path></g></svg>
+            Send Mail
+        </div>
+        </a>
+    </div>
+        <div class="mainContainer">
+            <div class="d-flex justify-content-between">
+                <h2>Analyse Data - Control Panel</h2>
+                <button class="btn btn-primary">Log Out</button>
+            </div>
+            <br/>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/admin">Control Panel</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Analyse Data</li>
+                </ol>
+            </nav>
+            <hr/>
+            <div class="container">
+                <div class="row">
+                    <h3>Feedback Analysis</h3>
+                </div>
+                <div class="row">
+                    <div class="col-7">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                    <div class="col-5">
+                        <canvas id="pieChart"></canvas>
+                    </div>
+                </div>
+                <div class="row">
+                    <h3>Feedback Analysis</h3>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <textarea id="feedbackContainer" placeholder="Analyse feedback from all users using machine learning. This process might take some time."></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-primary" id="feedbackAnalysis">Analyse Feedback Data</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
+    <script src="./dataAnalysis.js"></script>
+</body>
+</html>
