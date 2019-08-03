@@ -67,6 +67,9 @@ app.use('/admin',express.static(__dirname+'/admin'))
 //Goto all the route for request (Handle POST Requests)
 app.use('/route',route)
 
+//All API requests are handled here
+app.use('/api', api)
+
 // Socket Code Comes here
 // Copy of socket is made and used for every connection seperatly.
 
