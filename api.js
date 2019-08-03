@@ -63,7 +63,8 @@ route.post('/askbot', function(req, res, next){
     ])
     process.stdout.on('data', function(data) {
         res.send({
-            response : data.toString()
+            response : data.toString(),
+            status : "success"
         })
     })
 })
