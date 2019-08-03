@@ -11,14 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./groupChat.css">
+    <link rel="stylesheet" href="./jobSection.css">
     <link rel="stylesheet" href="./chatbotstyle.css">
     <link rel="stylesheet" href="./customscrollbar.css">
     <link rel="stylesheet" href="./navbar.css">
 </head>
 <body>
-    <audio src="./notification.mp3">
-    </audio>
     <div class="navBarBtn open">
         <span></span>
         <span></span>
@@ -50,13 +48,13 @@
         </div>
         </a>
         <a href="jobSection.html">
-        <div class="navlink">
+        <div class="navlink navlinkSelected">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><path data-color="color-2" fill="#f4f4f4" d="M43,10h-2V5H23v5h-2V4c0-0.552,0.448-1,1-1h20c0.552,0,1,0.448,1,1V10z"></path> <path data-color="color-2" fill="#f4f4f4" d="M39,46v3c0,0.552-0.448,1-1,1H26c-0.552,0-1-0.448-1-1v-3H5v11c0,2.209,1.791,4,4,4h46 c2.209,0,4-1.791,4-4V46H39z"></path> <path fill="#f4f4f4" d="M59,12H5c-2.209,0-4,1.791-4,4v27c0,0.552,0.448,1,1,1h23v-3c0-0.552,0.448-1,1-1h12c0.552,0,1,0.448,1,1v3 h23c0.552,0,1-0.448,1-1V16C63,13.791,61.209,12,59,12z"></path></g></svg>
             Job Portal
         </div>
         </a>
         <a href="groupChat.html">
-        <div class="navlink navlinkSelected">
+        <div class="navlink">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><circle data-color="color-2" fill="#ededed" cx="12" cy="12" r="7"></circle> <path data-color="color-2" fill="#ededed" d="M17,45V32c0-2.973,1.19-5.67,3.114-7.651C18.957,23.505,17.538,23,16,23H8c-3.86,0-7,3.14-7,7 v8c0,0.379,0.214,0.725,0.553,0.895l3.49,1.745l0.959,13.432C6.04,54.595,6.476,55,7,55h10c0.524,0,0.96-0.405,0.998-0.929 l0.464-6.498C17.578,47.042,17,46.076,17,45z"></path> <circle data-color="color-2" fill="#ededed" cx="52" cy="12" r="7"></circle> <path data-color="color-2" fill="#ededed" d="M47,45V32c0-2.973-1.19-5.67-3.114-7.651C45.043,23.505,46.462,23,48,23h8c3.86,0,7,3.14,7,7 v8c0,0.379-0.214,0.725-0.553,0.895l-3.49,1.745l-0.959,13.432C57.96,54.595,57.524,55,57,55H47c-0.524,0-0.96-0.405-0.998-0.929 l-0.464-6.498C46.422,47.042,47,46.076,47,45z"></path> <path fill="#ededed" d="M36,23h-8c-4.962,0-9,4.038-9,9v13c0,0.477,0.336,0.887,0.804,0.98l4.246,0.849l0.952,15.233 C25.035,62.589,25.472,63,26,63h12c0.528,0,0.965-0.411,0.998-0.938L39.95,46.83l4.246-0.849C44.664,45.887,45,45.477,45,45V32 C45,27.038,40.962,23,36,23z"></path> <path fill="#ededed" d="M32,19c4.962,0,9-4.038,9-9s-4.038-9-9-9s-9,4.038-9,9S27.038,19,32,19z"></path></g></svg>
             Group Chat
         </div>
@@ -81,47 +79,110 @@
         </a>
     </div>
     <div class="main">
-        <div class="fixedHeader">
-            <div id="header">
-                <div>
-                </div>
-                <div>
-                    <button id="logout" class="btn btn-primary">Log Out</button>
-                </div>
+        <div id="header">
+            <div>
             </div>
-            <div class="container">
-                <h3>Group Chat</h3>
-                <hr/>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" stroke-width="2"><g stroke-width="2" transform="translate(0, 0)"><path d="M19,13V8A7,7,0,0,0,5,8v5a13.834,13.834,0,0,1-2,7H21A13.834,13.834,0,0,1,19,13Z" fill="none" stroke="#444444" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2" stroke-linejoin="miter"></path> <path data-color="color-2" data-stroke="none" d="M9.174,22a3,3,0,0,0,5.652,0Z" fill="#444444"></path></g></svg>
+                <button id="logout" class="btn btn-primary">Log Out</button>
             </div>
         </div>
         <div class="container">
             <!-- -------------------------------------------------------------------------- -->
             <!-- --------------------------Main Content is here---------------------------- -->
             <!-- -------------------------------------------------------------------------- -->
-            
-            <div class="chatContainer">
-                <div class="unreadMsgContainer"><div class="unreadMsg"><b>UNREAD MESSAGES</b></div></div>
+            <h3>Job Portal</h3>
+            <hr/>
+            <div class="card">
+                <div class="card-header">
+                    React Development Intern
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Eazy PG</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis pariatur aperiam quibusdam quo. Pariatur mollitia officiis consectetur quo provident.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis pariatur aperiam quibusdam quo. Pariatur mollitia officiis consectetur quo provident.<br/>
+                        <b>Stipend Offered :</b> 15K - 20K per month
+                    </p>
+                    <p>
+                        <small class="tag">Intern</small>
+                        <small class="tag">webDevelopment</small>
+                        <small class="tag">reactjs</small>
+                    </p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
             </div>
-            <div class="chatFooterContainer">
-                <div class="chatFooter">
-                    <div class="chatFooterInput">
-                        <input class="form-control" id="chatInput" placeholder="Type your message here ...">
-                    </div>
-                    <div class="chatFooterBtn">
-                        <button class="btn btn-success" id="chatSubmit">Send</button>
-                    </div>
+            <br/>
+            <div class="card">
+                <div class="card-header">
+                    React Development Intern
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Eazy PG</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis pariatur aperiam quibusdam quo. Pariatur mollitia officiis consectetur quo provident.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis pariatur aperiam quibusdam quo. Pariatur mollitia officiis consectetur quo provident.<br/>
+                        <b>Stipend Offered :</b> 15K - 20K per month
+                    </p>
+                    <p>
+                        <small class="tag">Intern</small>
+                        <small class="tag">webDevelopment</small>
+                        <small class="tag">reactjs</small>
+                    </p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
+                </div>
+            </div>
+            <br/>
+            <div class="card">
+                <div class="card-header">
+                    React Development Intern
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Eazy PG</h5>
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis pariatur aperiam quibusdam quo. Pariatur mollitia officiis consectetur quo provident.Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis pariatur aperiam quibusdam quo. Pariatur mollitia officiis consectetur quo provident.<br/>
+                        <b>Stipend Offered :</b> 15K - 20K per month
+                    </p>
+                    <p>
+                        <small class="tag">Intern</small>
+                        <small class="tag">webDevelopment</small>
+                        <small class="tag">reactjs</small>
+                    </p>
+                    <a href="#" class="btn btn-primary">Apply Now</a>
                 </div>
             </div>
             <!-- -------------------------------------------------------------------------- -->
             <!-- -------------------------------------------------------------------------- -->
             <!-- -------------------------------------------------------------------------- -->
         </div>
-        
+    </div>
+    <div class="chatBotSpacer">
+    </div>
+    <div id="chatBotContainer">
+        <div id="chatBotHeader">
+            <div id="chatBotHeaderImg">
+                <img src="./img/chatbot.png" alt="" height="100%"/>
+            </div>
+            <div id="chatBotHeaderContent">Talk to Chatty</div>
+        </div>
+        <div id="chatBotBody">
+            <div id="chatBotBOTSIDE">
+                <span>
+                    Hi, Welcome on Board. How can we help?
+                </span>
+            </div>
+        </div>
+        <div id="chatBotFooter">
+            <div id="chatBotInputContainer">
+                <input id="chatBotInput" placeholder="Type your message here"/>
+            </div>
+            <div id="chatBotSubmit">
+                <img src="./img/sendbtn.png" alt="" height="100%"/>
+            </div>
+        </div>
     </div>
 
     <!-- SCRIPTS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="./groupChat.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="./jobSection.js"></script>
 </body>
 </html>
