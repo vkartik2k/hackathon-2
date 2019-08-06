@@ -6,8 +6,8 @@ import tflearn
 import tensorflow
 import random
 import json
-with open('intents.json') as file:
-    data=json.load(file)
+with open('machine_learning/intents.json') as file: #if error happens, change the file location to where intents.json is stored on your
+    data=json.load(file)#                               computer
 words=[]
 labels=[]
 docs_x=[]
