@@ -80,12 +80,11 @@ $(function () {
         chatContainer.animate({
             scrollTop: chatContainer.prop("scrollHeight")
         }, 1000);
-        $.post('../route/askChatBot/',{
-            query : query
-        },
+        $.get('http://localhost:5000/askBot/'+query,
         function(data){
             setTimeout(function () {
-                chatContainer.append(templateBot[0]+data+templateBot[1])
+                chatContainer.append(templateBot[0]+data.response+templateBot[1])
+                console.log(data)
                 chatContainer.animate({
                     scrollTop: chatContainer.prop("scrollHeight")
                 }, 1000)

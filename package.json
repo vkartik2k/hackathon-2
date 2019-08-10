@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/vkartik2k/hackathon-2#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "jsonwebtoken": "^8.5.1"
   }
 }
