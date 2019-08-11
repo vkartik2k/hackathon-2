@@ -13,10 +13,6 @@ body {
   background: #000;
   color: #fff; }
 
-.backColor{
-    background-color: #dda700;
-}
-
 #fixedTop{
   padding: 10px;
   text-align: right;

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dashboard</title>
+
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap-grid.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./musicPlayer.css">
+    <link rel="stylesheet" href="./chatbotstyle.css">
+    <link rel="stylesheet" href="./customscrollbar.css">
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+<body>
+    <div class="navBarBtn open">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="loadingDiv">
+        <img src="./img/settings.png"/>
+    </div>
+    <div class="navBar">
+        <div class="navBarTop">
+            <img src="img/logo.png" height="50px"/><br/>
+            <span class="fullname">Kartik Verma</span><br>
+            <span class="username">vkartik2k</span>
+        </div>
+        <div class="profilePhoto">
+            <img src="img/chatbot.png" height="100%" width="100%"/>
+        </div>
+        <a href="index.html">
+        <div class="navlink navlinkSelected">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16"><g transform="translate(0, 0)"><path fill="#f4f4f4" d="M6,0H1C0.4,0,0,0.4,0,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V1C7,0.4,6.6,0,6,0z"></path> <path fill="#f4f4f4" d="M15,0h-5C9.4,0,9,0.4,9,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1V1C16,0.4,15.6,0,15,0z"></path> <path fill="#f4f4f4" d="M6,9H1c-0.6,0-1,0.4-1,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1v-5C7,9.4,6.6,9,6,9z"></path> <path fill="#f4f4f4" d="M15,9h-5c-0.6,0-1,0.4-1,1v5c0,0.6,0.4,1,1,1h5c0.6,0,1-0.4,1-1v-5C16,9.4,15.6,9,15,9z"></path></g></svg>
+            Dashboard
+        </div>
+        </a>
+        <a href="myStartUps.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><path data-color="color-2" d="M29.81,9.5A22.359,22.359,0,0,0,5.669,20.051a1,1,0,0,0,.156,1.211l6.5,6.5A66.509,66.509,0,0,1,29.81,9.5Z" fill="#ffffff"></path><path data-color="color-2" d="M54.5,34.19A22.359,22.359,0,0,1,43.949,58.331a1,1,0,0,1-1.211-.156l-6.5-6.5A66.509,66.509,0,0,0,54.5,34.19Z" fill="#ffffff"></path><path data-color="color-2" d="M15.95,48.05a7.009,7.009,0,0,0-9.9,0C2.827,51.272,2.035,60.526,2,60.918A1,1,0,0,0,3,62c.027,0,.055,0,.082,0,.392-.032,9.646-.824,12.868-4.047A7.009,7.009,0,0,0,15.95,48.05Z" fill="#ffffff"></path><path d="M57.017,23.6A56.988,56.988,0,0,0,62,3.057a1,1,0,0,0-.289-.762A1.01,1.01,0,0,0,60.948,2,56.717,56.717,0,0,0,40.336,6.922Z" fill="#ffffff"></path><path d="M38.428,7.842c-19.73,9.875-27.534,28.652-27.634,28.9a1,1,0,0,0,.221,1.08L26.177,52.985a1,1,0,0,0,1.086.219c.247-.1,18.933-7.995,28.831-27.7ZM35,35a6,6,0,1,1,6-6A6,6,0,0,1,35,35Z" fill="#ffffff"></path></g></svg>
+            My Start-Ups
+        </div>
+        </a>
+        <a href="inbox.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><path d="M56,7H8a6.006,6.006,0,0,0-6,6V51a6.006,6.006,0,0,0,6,6H56a6.006,6.006,0,0,0,6-6V13A6.006,6.006,0,0,0,56,7Zm.656,8.755-23,20a1,1,0,0,1-1.312,0l-23-20a1,1,0,1,1,1.312-1.51L33,33.675l22.344-19.43a1,1,0,0,1,1.312,1.51Z" fill="#f4f4f4"></path></g></svg>
+            Inbox
+        </div>
+        </a>
+        <a href="jobSection.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><path data-color="color-2" fill="#f4f4f4" d="M43,10h-2V5H23v5h-2V4c0-0.552,0.448-1,1-1h20c0.552,0,1,0.448,1,1V10z"></path> <path data-color="color-2" fill="#f4f4f4" d="M39,46v3c0,0.552-0.448,1-1,1H26c-0.552,0-1-0.448-1-1v-3H5v11c0,2.209,1.791,4,4,4h46 c2.209,0,4-1.791,4-4V46H39z"></path> <path fill="#f4f4f4" d="M59,12H5c-2.209,0-4,1.791-4,4v27c0,0.552,0.448,1,1,1h23v-3c0-0.552,0.448-1,1-1h12c0.552,0,1,0.448,1,1v3 h23c0.552,0,1-0.448,1-1V16C63,13.791,61.209,12,59,12z"></path></g></svg>
+            Job Portal
+        </div>
+        </a>
+        <a href="api.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><path data-color="color-2" d="M17,23H29V47a3,3,0,0,0,6,0V23H47a1,1,0,0,0,.768-1.641l-15-18a1.035,1.035,0,0,0-1.536,0l-15,18A1,1,0,0,0,17,23Z" fill="#f7f7f7"></path><path d="M61,43a1,1,0,0,0-1,1V55a4,4,0,0,1-4,4H8a4,4,0,0,1-4-4V44a1,1,0,0,0-2,0V55a6.006,6.006,0,0,0,6,6H56a6.006,6.006,0,0,0,6-6V44A1,1,0,0,0,61,43Z" fill="#f7f7f7"></path></g></svg>
+            API
+        </div>
+        </a>
+        <a href="groupChat.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><circle data-color="color-2" fill="#ededed" cx="12" cy="12" r="7"></circle> <path data-color="color-2" fill="#ededed" d="M17,45V32c0-2.973,1.19-5.67,3.114-7.651C18.957,23.505,17.538,23,16,23H8c-3.86,0-7,3.14-7,7 v8c0,0.379,0.214,0.725,0.553,0.895l3.49,1.745l0.959,13.432C6.04,54.595,6.476,55,7,55h10c0.524,0,0.96-0.405,0.998-0.929 l0.464-6.498C17.578,47.042,17,46.076,17,45z"></path> <circle data-color="color-2" fill="#ededed" cx="52" cy="12" r="7"></circle> <path data-color="color-2" fill="#ededed" d="M47,45V32c0-2.973-1.19-5.67-3.114-7.651C45.043,23.505,46.462,23,48,23h8c3.86,0,7,3.14,7,7 v8c0,0.379-0.214,0.725-0.553,0.895l-3.49,1.745l-0.959,13.432C57.96,54.595,57.524,55,57,55H47c-0.524,0-0.96-0.405-0.998-0.929 l-0.464-6.498C46.422,47.042,47,46.076,47,45z"></path> <path fill="#ededed" d="M36,23h-8c-4.962,0-9,4.038-9,9v13c0,0.477,0.336,0.887,0.804,0.98l4.246,0.849l0.952,15.233 C25.035,62.589,25.472,63,26,63h12c0.528,0,0.965-0.411,0.998-0.938L39.95,46.83l4.246-0.849C44.664,45.887,45,45.477,45,45V32 C45,27.038,40.962,23,36,23z"></path> <path fill="#ededed" d="M32,19c4.962,0,9-4.038,9-9s-4.038-9-9-9s-9,4.038-9,9S27.038,19,32,19z"></path></g></svg>
+            Group Chat
+        </div>
+        </a>
+        <a href="changePassword.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16"><g transform="translate(0, 0)"><path fill="#f4f4f4" d="M14,5h-2V4c0-2.2-1.8-4-4-4S4,1.8,4,4v1H2C1.4,5,1,5.4,1,6v9c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V6 C15,5.4,14.6,5,14,5z M6,4c0-1.1,0.9-2,2-2s2,0.9,2,2v1H6V4z"></path></g></svg>
+            Change Password
+        </div>
+        </a>
+        <a href="updateProfile.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 16 16"><g transform="translate(0, 0)"><circle cx="8" cy="4" r="4" fill="#f4f4f4"></circle> <path data-color="color-2" d="M16,13.2a1.989,1.989,0,0,0-1.163-1.818A16.654,16.654,0,0,0,8,10a16.654,16.654,0,0,0-6.837,1.382A1.989,1.989,0,0,0,0,13.2V16H16Z" fill="#f4f4f4"></path></g></svg>
+            Update Profile
+        </div>
+        </a>
+        <a href="feedbackForm.html">
+        <div class="navlink">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="18px" height="18px" viewBox="0 0 64 64"><g transform="translate(0, 0)"><rect x="5.458" y="24.55" width="44.669" height="8.485" transform="translate(-12.219 28.086) rotate(-45)" fill="#f4f4f4"></rect><rect x="12.872" y="31.964" width="44.669" height="8.485" transform="translate(-15.29 35.5) rotate(-45)" fill="#f4f4f4"></rect><path data-color="color-2" d="M59.535,10.808,53.192,4.465a5.006,5.006,0,0,0-7.071,0L42,8.586,55.414,22l4.121-4.121a5,5,0,0,0,0-7.071Z" fill="#f4f4f4"></path><path data-color="color-2" d="M7.873,43.288,3.041,59.718A1,1,0,0,0,4,61a.972.972,0,0,0,.282-.041l16.431-4.832Z" fill="#f4f4f4"></path></g></svg>
+            Feedback
+        </div>
+        </a>
+    </div>
+    <div class="main">
+        <div id="header">
+            <div>
+            </div>
+            <div>
+                <button id="logout" class="btn btn-primary">Log Out</button>
+            </div>
+        </div>
+        <div class="container">
+            <!-- -------------------------------------------------------------------------- -->
+            <!-- --------------------------Main Content is here---------------------------- -->
+            <!-- -------------------------------------------------------------------------- -->
+            <div class="musicPlayer">
+                <div class="mpPhoto">
+                    <img src="img/chatbot.png" height="100%;">
+                </div>
+                <div class="mpContent"></div>
+            </div>
+            <!-- -------------------------------------------------------------------------- -->
+            <!-- -------------------------------------------------------------------------- -->
+            <!-- -------------------------------------------------------------------------- -->
+        </div>
+    </div>
+    <div class="chatBotSpacer">
+    </div>
+    <div id="chatBotContainer">
+        <div id="chatBotHeader">
+            <div id="chatBotHeaderImg">
+                <img src="./img/chatbot.png" alt="" height="100%"/>
+            </div>
+            <div id="chatBotHeaderContent">Talk to Chatty</div>
+        </div>
+        <div id="chatBotBody">
+            <div id="chatBotBOTSIDE">
+                <span>
+                    Hi, Welcome on Board. How can we help?
+                </span>
+            </div>
+        </div>
+        <div id="chatBotFooter">
+            <div id="chatBotInputContainer">
+                <input id="chatBotInput" placeholder="Type your message here"/>
+            </div>
+            <div id="chatBotSubmit">
+                <img src="./img/sendbtn.png" alt="" height="100%"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./musicPlayer.js"></script>
+</body>
+</html>
